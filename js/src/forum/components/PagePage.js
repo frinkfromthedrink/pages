@@ -10,7 +10,7 @@ export default class PagePage extends Page {
     /**
      * The page that is being viewed.
      *
-     * @type {sijad/pages/model/Page}
+     * @type {fof/pages/model/Page}
      */
     this.page = null;
 

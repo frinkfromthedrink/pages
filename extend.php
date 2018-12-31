@@ -1,10 +1,10 @@
 <?php
 
-namespace Sijad\Pages;
+namespace FoF\Pages;
 
 use Flarum\Extend;
 use Illuminate\Contracts\Events\Dispatcher;
-use Sijad\Pages\Api\Controller;
+use FoF\Pages\Api\Controller;
 
 return [
     new Extend\Locales(__DIR__.'/locale'),

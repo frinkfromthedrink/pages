@@ -11,12 +11,12 @@ export default class PagesPage extends Page {
         <div className="PagesPage-header">
           <div className="container">
             <p>
-              {app.translator.trans('sijad-pages.admin.pages.about_text')}
+              {app.translator.trans('fof-pages.admin.pages.about_text')}
             </p>
             {Button.component({
               className: 'Button Button--primary',
               icon: 'fas fa-plus',
-              children: app.translator.trans('sijad-pages.admin.pages.create_button'),
+              children: app.translator.trans('fof-pages.admin.pages.create_button'),
               onclick: () => app.modal.show(new EditPageModal())
             })}
           </div>

@@ -1,10 +1,10 @@
 <?php
 
-namespace Sijad\Pages\Command;
+namespace FoF\Pages\Command;
 
 use Flarum\Settings\SettingsRepositoryInterface;
 use Flarum\User\AssertPermissionTrait;
-use Sijad\Pages\PageRepository;
+use FoF\Pages\PageRepository;
 
 class DeletePageHandler
 {
@@ -32,7 +32,7 @@ class DeletePageHandler
     /**
      * @param DeletePage $command
      *
-     * @return \Sijad\Pages\Page
+     * @return \FoF\Pages\Page
      *
      * @throws \Flarum\Core\Exception\PermissionDeniedException
      */

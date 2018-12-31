@@ -1,6 +1,6 @@
 <?php
 
-namespace Sijad\Pages\Listener;
+namespace FoF\Pages\Listener;
 
 use Flarum\Api\Event\Serializing;
 use Illuminate\Contracts\Events\Dispatcher;

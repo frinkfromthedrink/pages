@@ -1,10 +1,10 @@
 <?php
 
-namespace Sijad\Pages\Command;
+namespace FoF\Pages\Command;
 
 use Flarum\User\AssertPermissionTrait;
-use Sijad\Pages\PageRepository;
-use Sijad\Pages\PageValidator;
+use FoF\Pages\PageRepository;
+use FoF\Pages\PageValidator;
 
 class EditPageHandler
 {
@@ -33,7 +33,7 @@ class EditPageHandler
     /**
      * @param EditPage $command
      *
-     * @return \Sijad\Pages\Page
+     * @return \FoF\Pages\Page
      *
      * @throws \Flarum\Core\Exception\PermissionDeniedException
      */

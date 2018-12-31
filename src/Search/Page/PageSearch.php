@@ -1,6 +1,6 @@
 <?php
 
-namespace Sijad\Pages\Search\Page;
+namespace FoF\Pages\Search\Page;
 
 use Flarum\Search\AbstractSearch;
 

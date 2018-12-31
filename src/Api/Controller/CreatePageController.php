@@ -1,11 +1,11 @@
 <?php
 
-namespace Sijad\Pages\Api\Controller;
+namespace FoF\Pages\Api\Controller;
 
 use Flarum\Api\Controller\AbstractCreateController;
 use Illuminate\Contracts\Bus\Dispatcher;
 use Psr\Http\Message\ServerRequestInterface;
-use Sijad\Pages\Command\CreatePage;
+use FoF\Pages\Command\CreatePage;
 use Tobscure\JsonApi\Document;
 
 class CreatePageController extends AbstractCreateController
@@ -13,7 +13,7 @@ class CreatePageController extends AbstractCreateController
     /**
      * {@inheritdoc}
      */
-    public $serializer = 'Sijad\Pages\Api\Serializer\PageSerializer';
+    public $serializer = 'FoF\Pages\Api\Serializer\PageSerializer';
 
     /**
      * @var Dispatcher

@@ -21,7 +21,7 @@ export default class PagesList extends Component {
     /**
      * The pages in the pages list.
      *
-     * @type {Sijad/Pages/Model/Page[]}
+     * @type {FoF/Pages/Model/Page[]}
      */
     this.pages = [];
 
@@ -52,7 +52,7 @@ export default class PagesList extends Component {
     }
 
     if (this.pages.length === 0) {
-      const text = app.translator.trans('sijad-pages.admin.pages_list.empty_text');
+      const text = app.translator.trans('fof-pages.admin.pages_list.empty_text');
       return Placeholder.component({text})
     }
 
@@ -79,7 +79,7 @@ export default class PagesList extends Component {
         <table className="PageList-results">
           <thead>
             <tr>
-              <th>{app.translator.trans('sijad-pages.admin.pages_list.title')}</th>
+              <th>{app.translator.trans('fof-pages.admin.pages_list.title')}</th>
               <th/>
             </tr>
           </thead>

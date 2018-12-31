@@ -1,5 +1,5 @@
 {
-    "name": "sijad/flarum-ext-pages",
+    "name": "fof/pages",
     "description": "Create custom page with Flarum",
     "type": "flarum-extension",
     "keywords": ["static", "page"],
@@ -11,15 +11,15 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/sijad/flarum-ext-pages/issues",
-        "source": "https://github.com/sijad/flarum-ext-pages"
+        "issues": "https://github.com/fof/pages/issues",
+        "source": "https://github.com/fof/pages"
     },
     "require": {
         "flarum/core": "^0.1.0-beta.8"
     },
     "autoload": {
         "psr-4": {
-            "Sijad\\Pages\\": "src/"
+            "FoF\\Pages\\": "src/"
         }
     },
     "extra": {

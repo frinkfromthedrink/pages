@@ -47,7 +47,7 @@ export default class PagesListItem extends Component {
 
   setAsHomePage() {
     app.alerts.dismiss(this.successAlert);
-    if (confirm(app.translator.trans('sijad-pages.admin.edit_page.set_as_home_page_confirmation'))) {
+    if (confirm(app.translator.trans('fof-pages.admin.edit_page.set_as_home_page_confirmation'))) {
       const page = this.props.page;
       saveSettings({
         default_route: '/pages/home',
@@ -65,7 +65,7 @@ export default class PagesListItem extends Component {
   }
 
   delete() {
-    if (confirm(app.translator.trans('sijad-pages.admin.edit_page.delete_page_confirmation'))) {
+    if (confirm(app.translator.trans('fof-pages.admin.edit_page.delete_page_confirmation'))) {
       const page = this.props.page;
       page.delete().then(() => m.redraw());
     }

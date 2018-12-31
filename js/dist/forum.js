@@ -279,13 +279,13 @@ function (_Component) {
     }, m("ul", {
       className: "PageHero-items"
     }, flarum_helpers_listItems__WEBPACK_IMPORTED_MODULE_3___default()(this.items().toArray()))));
-  };
+  }
   /**
    * Build an item list for the contents of the page hero.
    *
    * @return {ItemList}
    */
-
+  ;
 
   _proto.items = function items() {
     var items = new flarum_utils_ItemList__WEBPACK_IMPORTED_MODULE_2___default.a();
@@ -343,7 +343,7 @@ function (_Page) {
     /**
      * The page that is being viewed.
      *
-     * @type {sijad/pages/model/Page}
+     * @type {fof/pages/model/Page}
      */
 
 
@@ -365,58 +365,58 @@ function (_Page) {
     }, this.content()))] : flarum_components_LoadingIndicator__WEBPACK_IMPORTED_MODULE_2___default.a.component({
       className: 'LoadingIndicator--block'
     })));
-  };
+  }
   /**
    * Initilize page.
    *
    * @param {sijad/pages/Page} page
    * @protected
    */
-
+  ;
 
   _proto.show = function show(page) {
     this.page = page;
     app.history.push('page', page.title());
     app.setTitle(page.title());
     m.redraw();
-  };
+  }
   /**
    * Get the hero of current page.
    *
    * @return {VirtualElement}
    */
-
+  ;
 
   _proto.hero = function hero() {
     return _PageHero__WEBPACK_IMPORTED_MODULE_3__["default"].component({
       page: this.page
     });
-  };
+  }
   /**
    * Get the content of page.
    *
    * @return {VirtualElement}
    */
-
+  ;
 
   _proto.content = function content() {
     return m.trust(this.page.contentHtml());
-  };
+  }
   /**
    * Get current page id from route.
    *
    * @return string
    */
-
+  ;
 
   _proto.id = function id() {
     return m.route.param('id').split('-')[0];
-  };
+  }
   /**
    * Load page from the store, or make a request
    * if we don't have it yet. Then initialize the page.
    */
-
+  ;
 
   _proto.loadPage = function loadPage() {
     var id = this.id();
@@ -451,7 +451,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-app.initializers.add('sijad-pages', function (app) {
+app.initializers.add('fof-pages', function (app) {
   app.routes.homePage = {
     path: '/pages/home',
     component: _components_HomePage__WEBPACK_IMPORTED_MODULE_0__["default"].component()
@@ -464,7 +464,7 @@ app.initializers.add('sijad-pages', function (app) {
   /**
    * Generate a URL to a page.
    *
-   * @param {sijad/pages/models/Page} page
+   * @param {fof/pages/models/Page} page
    * @return {String}
    */
 

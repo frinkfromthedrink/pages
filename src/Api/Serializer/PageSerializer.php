@@ -1,9 +1,9 @@
 <?php
 
-namespace Sijad\Pages\Api\Serializer;
+namespace FoF\Pages\Api\Serializer;
 
 use Flarum\Api\Serializer\AbstractSerializer;
-use Sijad\Pages\Util\Html;
+use FoF\Pages\Util\Html;
 
 class PageSerializer extends AbstractSerializer
 {

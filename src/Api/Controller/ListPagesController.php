@@ -1,12 +1,12 @@
 <?php
 
-namespace Sijad\Pages\Api\Controller;
+namespace FoF\Pages\Api\Controller;
 
 use Flarum\Api\Controller\AbstractListController;
 use Flarum\Http\UrlGenerator;
 use Flarum\Search\SearchCriteria;
 use Psr\Http\Message\ServerRequestInterface;
-use Sijad\Pages\Search\Page\PageSearcher;
+use FoF\Pages\Search\Page\PageSearcher;
 use Tobscure\JsonApi\Document;
 
 class ListPagesController extends AbstractListController
@@ -14,7 +14,7 @@ class ListPagesController extends AbstractListController
     /**
      * {@inheritdoc}
      */
-    public $serializer = 'Sijad\Pages\Api\Serializer\PageSerializer';
+    public $serializer = 'FoF\Pages\Api\Serializer\PageSerializer';
 
     /**
      * {@inheritdoc}

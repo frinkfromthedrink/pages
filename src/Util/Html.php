@@ -1,8 +1,8 @@
 <?php
 
-namespace Sijad\Pages\Util;
+namespace FoF\Pages\Util;
 
-use Sijad\Pages\Page;
+use FoF\Pages\Page;
 
 class Html
 {

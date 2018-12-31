@@ -1,12 +1,12 @@
 <?php
 
-namespace Sijad\Pages\Search\Page;
+namespace FoF\Pages\Search\Page;
 
 use Flarum\Search\ApplySearchParametersTrait;
 use Flarum\Search\GambitManager;
 use Flarum\Search\SearchCriteria;
 use Flarum\Search\SearchResults;
-use Sijad\Pages\PageRepository;
+use FoF\Pages\PageRepository;
 
 class PageSearcher
 {

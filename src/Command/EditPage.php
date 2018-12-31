@@ -1,6 +1,6 @@
 <?php
 
-namespace Sijad\Pages\Command;
+namespace FoF\Pages\Command;
 
 use Flarum\User\User;
 

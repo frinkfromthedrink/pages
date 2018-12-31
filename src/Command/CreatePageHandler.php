@@ -1,10 +1,10 @@
 <?php
 
-namespace Sijad\Pages\Command;
+namespace FoF\Pages\Command;
 
 use Flarum\User\AssertPermissionTrait;
-use Sijad\Pages\Page;
-use Sijad\Pages\PageValidator;
+use FoF\Pages\Page;
+use FoF\Pages\PageValidator;
 
 class CreatePageHandler
 {

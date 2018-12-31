@@ -1,6 +1,6 @@
 <?php
 
-namespace Sijad\Pages;
+namespace FoF\Pages;
 
 use Flarum\Foundation\AbstractValidator;
 

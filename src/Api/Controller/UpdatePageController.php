@@ -1,11 +1,11 @@
 <?php
 
-namespace Sijad\Pages\Api\Controller;
+namespace FoF\Pages\Api\Controller;
 
 use Flarum\Api\Controller\AbstractShowController;
 use Illuminate\Contracts\Bus\Dispatcher;
 use Psr\Http\Message\ServerRequestInterface;
-use Sijad\Pages\Command\EditPage;
+use FoF\Pages\Command\EditPage;
 use Tobscure\JsonApi\Document;
 
 class UpdatePageController extends AbstractShowController
@@ -13,7 +13,7 @@ class UpdatePageController extends AbstractShowController
     /**
      * {@inheritdoc}
      */
-    public $serializer = 'Sijad\Pages\Api\Serializer\PageSerializer';
+    public $serializer = 'FoF\Pages\Api\Serializer\PageSerializer';
 
     /**
      * @var Dispatcher

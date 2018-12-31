@@ -145,7 +145,7 @@ __webpack_require__.r(__webpack_exports__);
     component: _components_PagesPage__WEBPACK_IMPORTED_MODULE_3__["default"].component()
   };
 
-  app.extensionSettings['sijad-pages'] = function () {
+  app.extensionSettings['fof-pages'] = function () {
     return m.route(app.route('pages'));
   };
 
@@ -153,8 +153,8 @@ __webpack_require__.r(__webpack_exports__);
     items.add('pages', flarum_components_AdminLinkButton__WEBPACK_IMPORTED_MODULE_2___default.a.component({
       href: app.route('pages'),
       icon: 'fas fa-file-alt',
-      children: app.translator.trans('sijad-pages.admin.nav.pages_button'),
-      description: app.translator.trans('sijad-pages.admin.nav.pages_text')
+      children: app.translator.trans('fof-pages.admin.nav.pages_button'),
+      description: app.translator.trans('fof-pages.admin.nav.pages_text')
     }));
   });
 });
@@ -215,7 +215,7 @@ function (_Modal) {
 
   _proto.title = function title() {
     var title = this.pageTitle();
-    return title ? title : app.translator.trans('sijad-pages.admin.edit_page.title');
+    return title ? title : app.translator.trans('fof-pages.admin.edit_page.title');
   };
 
   _proto.content = function content() {
@@ -227,9 +227,9 @@ function (_Modal) {
       className: "Form"
     }, m("div", {
       className: "Form-group"
-    }, m("label", null, app.translator.trans('sijad-pages.admin.edit_page.title_label')), m("input", {
+    }, m("label", null, app.translator.trans('fof-pages.admin.edit_page.title_label')), m("input", {
       className: "FormControl",
-      placeholder: app.translator.trans('sijad-pages.admin.edit_page.title_placeholder'),
+      placeholder: app.translator.trans('fof-pages.admin.edit_page.title_placeholder'),
       value: this.pageTitle(),
       oninput: function oninput(e) {
         _this.pageTitle(e.target.value);
@@ -238,21 +238,21 @@ function (_Modal) {
       }
     })), m("div", {
       className: "Form-group"
-    }, m("label", null, app.translator.trans('sijad-pages.admin.edit_page.slug_label')), m("input", {
+    }, m("label", null, app.translator.trans('fof-pages.admin.edit_page.slug_label')), m("input", {
       className: "FormControl",
-      placeholder: app.translator.trans('sijad-pages.admin.edit_page.slug_placeholder'),
+      placeholder: app.translator.trans('fof-pages.admin.edit_page.slug_placeholder'),
       value: this.slug(),
       oninput: function oninput(e) {
         _this.slug(e.target.value);
       }
     })), m("div", {
       className: "Form-group"
-    }, m("label", null, app.translator.trans('sijad-pages.admin.edit_page.content_label')), m("textarea", {
+    }, m("label", null, app.translator.trans('fof-pages.admin.edit_page.content_label')), m("textarea", {
       className: "FormControl",
       rows: "5",
       value: this.pageContent(),
       onchange: m.withAttr('value', this.pageContent),
-      placeholder: app.translator.trans('sijad-pages.admin.edit_page.content_placeholder')
+      placeholder: app.translator.trans('fof-pages.admin.edit_page.content_placeholder')
     })), m("div", {
       className: "Form-group"
     }, m("div", null, m("label", {
@@ -262,7 +262,7 @@ function (_Modal) {
       value: "1",
       checked: this.isHidden(),
       onchange: m.withAttr('checked', this.isHidden)
-    }), app.translator.trans('sijad-pages.admin.edit_page.hidden_label')))), m("div", {
+    }), app.translator.trans('fof-pages.admin.edit_page.hidden_label')))), m("div", {
       className: "Form-group"
     }, m("div", null, m("label", {
       className: "checkbox"
@@ -271,18 +271,18 @@ function (_Modal) {
       value: "1",
       checked: this.isHtml(),
       onchange: m.withAttr('checked', this.isHtml)
-    }), app.translator.trans('sijad-pages.admin.edit_page.html_label')))), m("div", {
+    }), app.translator.trans('fof-pages.admin.edit_page.html_label')))), m("div", {
       className: "Form-group"
     }, flarum_components_Button__WEBPACK_IMPORTED_MODULE_2___default.a.component({
       type: 'submit',
       className: 'Button Button--primary EditPageModal-save',
       loading: this.loading,
-      children: app.translator.trans('sijad-pages.admin.edit_page.submit_button')
+      children: app.translator.trans('fof-pages.admin.edit_page.submit_button')
     }), this.page.exists ? m("button", {
       type: "button",
       className: "Button EditPageModal-delete",
       onclick: this.delete.bind(this)
-    }, app.translator.trans('sijad-pages.admin.edit_page.delete_page_button')) : '')));
+    }, app.translator.trans('fof-pages.admin.edit_page.delete_page_button')) : '')));
   };
 
   _proto.onsubmit = function onsubmit(e) {
@@ -309,7 +309,7 @@ function (_Modal) {
   };
 
   _proto.delete = function _delete() {
-    if (confirm(app.translator.trans('sijad-pages.admin.edit_page.delete_page_confirmation'))) {
+    if (confirm(app.translator.trans('fof-pages.admin.edit_page.delete_page_confirmation'))) {
       this.page.delete().then(function () {
         return m.redraw();
       });
@@ -376,7 +376,7 @@ function (_Component) {
     /**
      * The pages in the pages list.
      *
-     * @type {Sijad/Pages/Model/Page[]}
+     * @type {FoF/Pages/Model/Page[]}
      */
 
     this.pages = [];
@@ -405,7 +405,7 @@ function (_Component) {
     }
 
     if (this.pages.length === 0) {
-      var text = app.translator.trans('sijad-pages.admin.pages_list.empty_text');
+      var text = app.translator.trans('fof-pages.admin.pages_list.empty_text');
       return flarum_components_Placeholder__WEBPACK_IMPORTED_MODULE_3___default.a.component({
         text: text
       });
@@ -433,18 +433,18 @@ function (_Component) {
       className: "PageList"
     }, m("table", {
       className: "PageList-results"
-    }, m("thead", null, m("tr", null, m("th", null, app.translator.trans('sijad-pages.admin.pages_list.title')), m("th", null))), m("tbody", null, this.pages.map(function (page) {
+    }, m("thead", null, m("tr", null, m("th", null, app.translator.trans('fof-pages.admin.pages_list.title')), m("th", null))), m("tbody", null, this.pages.map(function (page) {
       return _PagesListItem__WEBPACK_IMPORTED_MODULE_5__["default"].component({
         page: page
       });
     }))), m("div", {
       className: "PageList-pagination"
     }, next, prev));
-  };
+  }
   /**
    * @public
    */
-
+  ;
 
   _proto.refresh = function refresh(clear) {
     if (clear === void 0) {
@@ -457,14 +457,14 @@ function (_Component) {
     }
 
     return this.loadResults().then(this.parseResults.bind(this));
-  };
+  }
   /**
    * Load a new page of Pages results.
    *
    * @param {Integer} page number.
    * @return {Promise}
    */
-
+  ;
 
   _proto.loadResults = function loadResults() {
     var offset = this.page * this.loadLimit;
@@ -475,40 +475,40 @@ function (_Component) {
       },
       sort: '-time'
     });
-  };
+  }
   /**
    * Load the next page of results.
    *
    * @public
    */
-
+  ;
 
   _proto.loadNext = function loadNext() {
     if (this.nextResults === true) {
       this.page++;
       this.refresh();
     }
-  };
+  }
   /**
    * Load the previous page of results.
    *
    * @public
    */
-
+  ;
 
   _proto.loadPrev = function loadPrev() {
     if (this.prevResults === true) {
       this.page--;
       this.refresh();
     }
-  };
+  }
   /**
    * Parse results and append them to the page list.
    *
    * @param {Page[]} results
    * @return {Page[]}
    */
-
+  ;
 
   _proto.parseResults = function parseResults(results) {
     [].push.apply(this.pages, results);
@@ -608,7 +608,7 @@ function (_Component) {
 
     app.alerts.dismiss(this.successAlert);
 
-    if (confirm(app.translator.trans('sijad-pages.admin.edit_page.set_as_home_page_confirmation'))) {
+    if (confirm(app.translator.trans('fof-pages.admin.edit_page.set_as_home_page_confirmation'))) {
       var page = this.props.page;
       flarum_utils_saveSettings__WEBPACK_IMPORTED_MODULE_4___default()({
         default_route: '/pages/home',
@@ -626,7 +626,7 @@ function (_Component) {
   };
 
   _proto.delete = function _delete() {
-    if (confirm(app.translator.trans('sijad-pages.admin.edit_page.delete_page_confirmation'))) {
+    if (confirm(app.translator.trans('fof-pages.admin.edit_page.delete_page_confirmation'))) {
       var page = this.props.page;
       page.delete().then(function () {
         return m.redraw();
@@ -682,10 +682,10 @@ function (_Page) {
       className: "PagesPage-header"
     }, m("div", {
       className: "container"
-    }, m("p", null, app.translator.trans('sijad-pages.admin.pages.about_text')), flarum_components_Button__WEBPACK_IMPORTED_MODULE_2___default.a.component({
+    }, m("p", null, app.translator.trans('fof-pages.admin.pages.about_text')), flarum_components_Button__WEBPACK_IMPORTED_MODULE_2___default.a.component({
       className: 'Button Button--primary',
       icon: 'fas fa-plus',
-      children: app.translator.trans('sijad-pages.admin.pages.create_button'),
+      children: app.translator.trans('fof-pages.admin.pages.create_button'),
       onclick: function onclick() {
         return app.modal.show(new _EditPageModal__WEBPACK_IMPORTED_MODULE_3__["default"]());
       }
@@ -716,7 +716,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _addPagesPane__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./addPagesPane */ "./src/admin/addPagesPane.js");
 
 
-app.initializers.add('sijad-pages', function (app) {
+app.initializers.add('fof-pages', function (app) {
   app.store.models.pages = _common_models_Page__WEBPACK_IMPORTED_MODULE_0__["default"];
   Object(_addPagesPane__WEBPACK_IMPORTED_MODULE_1__["default"])();
 });

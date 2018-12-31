@@ -1,10 +1,10 @@
 <?php
 
-namespace Sijad\Pages\Api\Controller;
+namespace FoF\Pages\Api\Controller;
 
 use Flarum\Api\Controller\AbstractShowController;
 use Psr\Http\Message\ServerRequestInterface;
-use Sijad\Pages\PageRepository;
+use FoF\Pages\PageRepository;
 use Tobscure\JsonApi\Document;
 
 class ShowPageController extends AbstractShowController
@@ -12,7 +12,7 @@ class ShowPageController extends AbstractShowController
     /**
      * {@inheritdoc}
      */
-    public $serializer = 'Sijad\Pages\Api\Serializer\PageSerializer';
+    public $serializer = 'FoF\Pages\Api\Serializer\PageSerializer';
 
     /**
      * @var PageRepository

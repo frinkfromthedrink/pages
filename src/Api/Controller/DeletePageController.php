@@ -1,11 +1,11 @@
 <?php
 
-namespace Sijad\Pages\Api\Controller;
+namespace FoF\Pages\Api\Controller;
 
 use Flarum\Api\Controller\AbstractDeleteController;
 use Illuminate\Contracts\Bus\Dispatcher;
 use Psr\Http\Message\ServerRequestInterface;
-use Sijad\Pages\Command\DeletePage;
+use FoF\Pages\Command\DeletePage;
 
 class DeletePageController extends AbstractDeleteController
 {
